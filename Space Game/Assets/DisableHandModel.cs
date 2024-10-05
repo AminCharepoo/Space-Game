@@ -5,7 +5,7 @@ using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
-public class DisableHandModel : MonoBehaviour
+public class DisableGrabbingHandModel : MonoBehaviour
 {
     public GameObject leftHandModel;
     public GameObject rightHandModel;
@@ -14,7 +14,7 @@ public class DisableHandModel : MonoBehaviour
     {
         XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
         grabInteractable.selectEntered.AddListener(HideGrabbingHand);
-        grabInteractable.selectEntered.AddListener(ShowGrabbingHand);
+        grabInteractable.selectExited.AddListener(ShowGrabbingHand);
     }
 
     public void HideGrabbingHand(SelectEnterEventArgs args)
@@ -23,19 +23,19 @@ public class DisableHandModel : MonoBehaviour
         {
             leftHandModel.SetActive(false);
         }
-        else if(args.interactableObject.transform.tag == "Right Hand")
+        else if(args.interactorObject.transform.tag == "Right Hand")
         {
             rightHandModel.SetActive(false);
         }
     }
 
-    public void ShowGrabbingHand(SelectEnterEventArgs args)
+    public void ShowGrabbingHand(SelectExitEventArgs args)
     {
         if(args.interactorObject.transform.tag == "Left Hand")
         {
             leftHandModel.SetActive(true);
         }
-        else if(args.interactableObject.transform.tag == "Right Hand")
+        else if(args.interactorObject.transform.tag == "Right Hand")
         {
             rightHandModel.SetActive(true);
         }
