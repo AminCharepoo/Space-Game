@@ -19,11 +19,11 @@ public class DisableGrabbingHandModel : MonoBehaviour
 
     public void HideGrabbingHand(SelectEnterEventArgs args)
     {
-        if(args.interactorObject.transform.tag == "Left Hand")
+        if (args.interactorObject.transform.tag == "Left Hand")
         {
             leftHandModel.SetActive(false);
         }
-        else if(args.interactorObject.transform.tag == "Right Hand")
+        else if (args.interactorObject.transform.tag == "Right Hand")
         {
             rightHandModel.SetActive(false);
         }
@@ -31,11 +31,11 @@ public class DisableGrabbingHandModel : MonoBehaviour
 
     public void ShowGrabbingHand(SelectExitEventArgs args)
     {
-        if(args.interactorObject.transform.tag == "Left Hand")
+        if (args.interactorObject.transform.tag == "Left Hand")
         {
             leftHandModel.SetActive(true);
         }
-        else if(args.interactorObject.transform.tag == "Right Hand")
+        else if (args.interactorObject.transform.tag == "Right Hand")
         {
             rightHandModel.SetActive(true);
         }
@@ -43,6 +43,6 @@ public class DisableGrabbingHandModel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -1,34 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Tookit;
 
+[System.Serializable]
 public class MeteorPistol : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        XRGrabInteractable grabInteractable =  GetComponent<XRGrabInteractable>();
-        grabInteractable.activated.AddListener(x =>  StartShoot());
+        XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.activated.AddListener(x => StartShoot());
         grabInteractable.deactivated.AddListener(x => StopShoot());
     }
 
-    public void  StartShoot()
+    public void StartShoot()
     {
         particles.Play();
     }
 
-    public void StopShoot()
+    public voidStopShoot()
     {
-        particles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear); 
+        particles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-
-
 }
