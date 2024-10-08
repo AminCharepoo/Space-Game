@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
-[System.Serializable]
+
 public class MeteorPistol : MonoBehaviour
 {
+    public ParticleSystem particles;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +22,15 @@ public class MeteorPistol : MonoBehaviour
         particles.Play();
     }
 
-    public voidStopShoot()
+    public void StopShoot()
     {
         particles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
     }
+
+
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
