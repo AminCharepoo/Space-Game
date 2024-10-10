@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.2973683, g: 0.2747864, b: 0.6132076, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 8a23e129d7272ea4ab5b112a89718aee, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -2716,7 +2716,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.9002802, b: 0.77265036, a: 1}
-  m_Intensity: 10
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7060,7 +7060,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10839482, guid: 5412c75372d92be4484fa4a55b5c99e3, type: 3}
       propertyPath: m_Intensity
-      value: 0.53
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 10839482, guid: 5412c75372d92be4484fa4a55b5c99e3, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 1.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
