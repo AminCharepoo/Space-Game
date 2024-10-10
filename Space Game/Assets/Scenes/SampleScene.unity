@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.2973683, g: 0.2747864, b: 0.6132076, a: 1}
+  m_SubtractiveShadowColor: {r: 0.23736204, g: 0.3501375, b: 0.3962264, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 8a23e129d7272ea4ab5b112a89718aee, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -2675,7 +2675,7 @@ Transform:
   m_GameObject: {fileID: 391935192}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.42508376, y: -1.8542199, z: 6.4523916}
+  m_LocalPosition: {x: -0.42508376, y: -5.08, z: 9.696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2716,7 +2716,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.9002802, b: 0.77265036, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.81
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6631,37 +6631,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1394257948}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1410277862
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1410277863}
-  m_Layer: 0
-  m_Name: Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1410277863
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410277862}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1426467060}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1426467059
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,7 +6676,6 @@ Transform:
   - {fileID: 597148622}
   - {fileID: 965957583}
   - {fileID: 405229364}
-  - {fileID: 1410277863}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448992666
