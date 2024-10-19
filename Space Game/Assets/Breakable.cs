@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Breakable : MonoBehaviour
+
 {
     public List<GameObject> breakablePieces;
+    public float timeToBreak = 2;
+    private float timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +20,20 @@ public class Breakable : MonoBehaviour
 
     public void Break()
     {
-        foreach(var item in breakablePieces)
+        timer += Time.deltaTime;
+
+        if (timer>timeToBreak)
         {
-            item.SetActive(true);
-            item.transform.parent = null;
-        }
+            foreach(var item in breakablePieces)
+            {
+                item.SetActive(true);
+                item.transform.parent = null;
+            }
 
         gameObject.SetActive(false);
+
+        }
+        
     }
     // Update is called once per frame
     void Update()
